@@ -1,7 +1,7 @@
 <?php
 /**
- * Plugin Name:       GravityView Mod: Make "Year of Project" Numeric
- * Plugin URI:        https://github.com/katzwebservices/gv-snippets/tree/addon/4760-numeric
+ * Plugin Name:       GravityView Mod: Make Calculated Field Numeric
+ * Plugin URI:        https://github.com/zackkatz/gv-snippets/tree/addon/4760-numeric
  * Description:       Gravity Forms isn't sorting the field values properly.
  * Version:           1.0
  * Author:            GravityView
@@ -42,7 +42,7 @@ function gv_snippet_make_year_of_project_numeric( $parameters, $args, $form_id =
 		if ( isset( $parameters['sorting'] ) && is_array( $parameters['sorting'] ) && isset( $parameters['sorting']['key'] ) ) {
 
 			// The "Year of Project" field
-			if ( 78 === intval( $parameters['sorting']['key'] ) ) {
+			if ( 10 === intval( $parameters['sorting']['key'] ) ) {
 				$parameters['sorting']['is_numeric'] = true;
 			}
 		}
